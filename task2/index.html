@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <title>Завдання 2</title>
+</head>
+<body>
+    <header style="text-align: center;">
+        <h1>ТВ-32 Михайленко Роман<br>Практична робота 1, Завдання 2.</h1>
+    </header>
+    <!-- Поля вводу -->
+    <div>
+        <span>Вуглець %</span><br>
+        <input type="number" id="carbon" value="85.5"> <br>
+        <span>Водень %</span><br>
+        <input type="number" id="hydrogen" value="11.2"> <br>
+        <span>Кисень %</span><br>
+        <input type="number" id="oxygen" value="0.8"><br>
+        <span>Сірка %</span><br>
+        <input type="number" id="sulfur" value="2.5"><br>
+        <span>Нижча теплота згорання горючої маси мазуту МДж/кг</span><br>
+        <input type="number" id="lower_temp" value="40.4"><br>
+        <span>Вологість робочої маси палива %</span><br>
+        <input type="number" id="humidity" value="2"><br>
+        <span>Зольність сухої маси %</span><br>
+        <input type="number" id="ashiness" value="0.15"><br>
+        <span>Вміст ванадію мг/кг</span><br>
+        <input type="number" id="vanadium" value="333.3"><br>
+    </div>
+    <!-- Кнопка виклику функції обрахунку -->
+    <button onclick="calc()">Обчислити</button>
+    <!-- Вивід результатів -->
+    <h2>Тоді склад робочої маси мазуту буде наступний:</h2>
+    <ul id="results"></ul>
+    <h2>Робоча теплота згорання: </h2>
+    <span id="workTemp"> </span><span> МДж/кг</span>
+
+</body>
+</html>

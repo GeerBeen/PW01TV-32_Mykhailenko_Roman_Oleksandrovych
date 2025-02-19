@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="main.js"></script>
+    <title>Завдання 1</title>
+</head>
+<body>
+    <header style="text-align: center;">
+        <h1>ТВ-32 Михайленко Роман<br>Практична робота 1, Завдання 1.</h1>
+    </header>
+    <!-- Поля вводу -->
+    <div>
+        <span>H<sup>P</sup>%</span>
+        <input type="number" id="h" placeholder="H" value="1.9"> <br>
+        <span>C<sup>P</sup>%</span>
+        <input type="number" id="c" placeholder="C" value="21.1"> <br>
+        <span>S<sup>P</sup>%</span>
+        <input type="number" id="s" placeholder="S" value="2.6"><br>
+        <span>N<sup>P</sup>%</span>
+        <input type="number" id="n" placeholder="N" value="0.2"><br>
+        <span>O<sup>P</sup>%</span>
+        <input type="number" id="o" placeholder="O" value="7.1"><br>
+        <span>W<sup>P</sup>%</span>
+        <input type="number" id="w" placeholder="W" value="53.0"><br>
+        <span>A<sup>P</sup>%</span>
+        <input type="number" id="a" placeholder="A" value="14.1"><br>
+    </div>
+
+    <!-- Кнопка виклику функції обрахунку -->
+    <button onclick="calc()">Calculate</button>
+    
+    <!-- Вивід результатів -->
+    <h2>Результати:</h2>
+    <p>К<sup>РС</sup> : 
+        <span id="Krc"></span></p>
+    <p>K<sup>РГ</sup> : 
+        <span id="Krg"></span></p>
+    <p>Q<sup>Р</sup><sub>H</sub> : 
+        <span id="Qrh"></span></p>
+
+    <h3>Результати сухого палива:</h3>
+    <ul id="dryResults"></ul>
+    <p>Перевірка: <span id="dryCheck"></span>%</p>
+    <p>Q<sup>С</sup><sub>H</sub> : 
+        <span id="Qch"></span></p>
+
+    <h3>Результати горючого палива:</h3>
+    <ul id="combResults"></ul>
+    <p>Перевірка: <span id="combCheck"></span>%</p>
+    <p>Q<sup>Г</sup><sub>H</sub> : 
+        <span id="Qgh"></span></p>
+
+</body>
+</html>
